@@ -38,7 +38,7 @@ app.use('/', function(req, res, next) {
 const localisationController = require('./controllers/localisationController');
 app.get('/' , localisationController) ; 
 
-//app.use('/', require('./controllers/localisationController.js'));
+app.use('/', require('./controllers/localisationController.js'));
 
 
 // Start server
